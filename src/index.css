@@ -17,7 +17,6 @@ body {
 .card {
   border-radius: 10px;
   width: 250px;
-  /* height: 300px; */
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -30,9 +29,10 @@ body {
 .header {
   font-family: Cambria;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   flex-direction: column;
+  margin-left: 30px;
   padding-bottom: 10px;
   padding-top: 30px;
 }
@@ -63,7 +63,7 @@ body {
   border-radius: 5px;
 }
 .button:hover {
-  background-color: #c7dbd5;
+  background-color: #ead672;
   color: #333;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
@@ -90,28 +90,48 @@ body {
 }
 
 .details {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  width: fit-content;
-  min-width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4B776D;
+    border-radius: 10px;
+    padding: 20px;
+    width: fit-content;
+    min-width: 300px;
+    box-shadow: 0 4px 10px black;
+}
+
+.PDettails{
+  color: whitesmoke;
+  margin-bottom: 16px;
+  font-size: 18px;
 }
 
 .hide-btn {
-  width: 80px;
+  width: 100px;
   padding: 4px;
   font-size: 17px;
   margin: 10px auto 0;
   display: block;
   border-radius: 4px;
   border: none;
-  background-color: #b0352c;
-  color: white;
+  background-color: #ead672;
+  color: #2E7363;
   cursor: pointer;
+  border: 1px solid #779b94;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hide-btn:hover {
+  background-color: #ead672;
+  color: #333;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.hide-btn:active {
+  transform: translateY(0);
+  opacity: 0.9;
 }
 
 .P{
