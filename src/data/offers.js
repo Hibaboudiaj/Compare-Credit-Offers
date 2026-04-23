@@ -1,3 +1,8 @@
+import cih from "../assets/cih-bank-logo-png_seeklogo-271012.png";
+import bankOfAfrica from "../assets/Bank_of_Africa_Logo.png";
+import awb from "../assets/Logo_AWB.svg.png";
+import upez from "../assets/upezHON0_400x400.png";
+
 export const offers = [
   {
     id: 1,
@@ -5,6 +10,8 @@ export const offers = [
     rate: 4.5,
     amount: 10000,
     duration: 1,
+
+    pic: cih,
   },
   {
     id: 2,
@@ -12,6 +19,7 @@ export const offers = [
     rate: 5.3,
     amount: 20000,
     duration: 1,
+    pic: bankOfAfrica,
   },
   {
     id: 3,
@@ -19,6 +27,7 @@ export const offers = [
     rate: 6.5,
     amount: 50000,
     duration: 4,
+    pic: awb,
   },
   {
     id: 4,
@@ -26,5 +35,6 @@ export const offers = [
     rate: 3.7,
     amount: 70000,
     duration: 6,
+    pic: upez,
   },
 ];

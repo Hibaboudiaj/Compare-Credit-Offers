@@ -9,7 +9,10 @@ const List = () => {
           key={offer.id}
           bank={offer.bank}
           amount={offer.amount}
+          duration={offer.duration}
           rate={offer.rate}
+          pic={offer.pic}
+          id={offer.id}
         />
       ))}
     </div>
