@@ -5,7 +5,6 @@ const Dettails = (props) => {
     document.getElementById(`popup-${props.offer.id}`).style.display = "none";
   }
 
-  // Calculate loan details
   const p = props.offer.amount;
   const r = props.offer.rate;
   const n = props.offer.duration;
@@ -23,18 +22,18 @@ const Dettails = (props) => {
     <>
       <div className="popup" id={`popup-${props.offer.id}`}>
         <div className="details">
-          <p className="P">
+          <p className="PDettails">
             Duree: {props.offer.duration}{" "}
-            {props.offer.duration > 1 ? "ans" : "an"}
+            {props.offer.duration > 1}
           </p>
-          <p className="P">Total month: {months}</p>
+          <p className="PDettails">Total month: {months}</p>
 
-          <p className="P">Taux: {props.offer.rate}%</p>
-          <p className="P">
+          <p className="PDettails">Taux: {props.offer.rate}%</p>
+          <p className="PDettails">
             Mensualité: ${Math.round(mensualite).toLocaleString()}
           </p>
-          <p className="P">Coût Total: ${Math.round(total).toLocaleString()}</p>
-          <p className="P">
+          <p className="PDettails">Coût Total: ${Math.round(total).toLocaleString()}</p>
+          <p className="PDettails">
             Intérêts: ${Math.round(interest).toLocaleString()}
           </p>
           <button className="hide-btn" onClick={hidePopup}>
