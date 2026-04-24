@@ -10,8 +10,8 @@ export const offers = [
     rate: 4.5,
     amount: 10000,
     duration: 1,
-
     pic: cih,
+    isRecommended: false,
   },
   {
     id: 2,
@@ -20,14 +20,16 @@ export const offers = [
     amount: 20000,
     duration: 1,
     pic: bankOfAfrica,
+    isRecommended: false,
   },
   {
     id: 3,
     bank: "Attijari Wafa Bank",
-    rate: 6.5,
+    rate: 2.4,
     amount: 50000,
     duration: 4,
     pic: awb,
+    isRecommended: true,
   },
   {
     id: 4,
@@ -36,5 +38,6 @@ export const offers = [
     amount: 70000,
     duration: 6,
     pic: upez,
+    isRecommended: false,
   },
 ];

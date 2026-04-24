@@ -24,6 +24,7 @@ body {
   align-items: center;
   background-color: whitesmoke;
   box-shadow: 0 4px 8px #8fb1a9;
+  position: relative;
 }
 
 .header {
@@ -42,11 +43,10 @@ body {
   color: #3e6a60;
 }
 
-.sousTitre{
+.sousTitre {
   margin-top: 10px;
   color: #3e6a60;
 }
-
 
 .button {
   /* margin-bottom: 20px; */
@@ -74,35 +74,47 @@ body {
 }
 
 .card img {
-  margin-bottom: 20px;
+  margin-top: 20px;
   width: 160px;
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.142);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
   display: none;
   z-index: 10;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
 .details {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #4B776D;
-    border-radius: 10px;
-    padding: 20px;
-    width: fit-content;
-    min-width: 300px;
-    box-shadow: 0 4px 10px black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4b776d;
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+  min-width: 300px;
+  box-shadow: 0 4px 10px black;
 }
 
-.PDettails{
+.titleDetailes {
+  color: #ead672;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.PDettails {
+  margin-top: 10px;
   color: whitesmoke;
   margin-bottom: 16px;
   font-size: 18px;
@@ -117,7 +129,7 @@ body {
   border-radius: 4px;
   border: none;
   background-color: #ead672;
-  color: #2E7363;
+  color: #2e7363;
   cursor: pointer;
   border: 1px solid #779b94;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -134,8 +146,30 @@ body {
   opacity: 0.9;
 }
 
-.P{
+.P {
   margin-bottom: 16px;
   font-size: 18px;
   color: #295449;
+}
+
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* right: 1px; */
+}
+
+.card-badge {
+  position: absolute;
+  right: 10px;
+  width: 80px; /* بدلي الحجم كيف بغيتي */
+  /* height: auto; */
+}
+
+#badgeImg{
+  position: absolute;
+  bottom: 273px;
+  left: 255px;
+  width: 40px;
+  height: auto;
 }

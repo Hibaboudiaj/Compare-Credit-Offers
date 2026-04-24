@@ -1,23 +1,36 @@
-import Dettails from "../components/dettails";
+import Details from "./Details";
+import recomandedBadg from "../assets/badge.png";
 
-const Card = (props) => {
-  // create function for click event
+const Card = ({
+  offer: { id, bank, rate, amount, duration, pic, isRecommended },
+}) => {
   function showPopup() {
-    document.getElementById(`popup-${props.id}`).style.display = "block";
+    document.getElementById(`popup-${id}`).style.display = "block";
   }
-
   return (
     <div className="card">
-      <img src={props.pic} alt="" />
+      {/* affichage de badge */}
+      {isRecommended === true ? (
+        <img id="badgeImg" src={recomandedBadg} alt="u" />
+      ) : null}
+      {/* affichage logo */}
+      <img src={pic} alt="" className="card-image" />
 
+      {/* affichage info card */}
       <div className="offer-card-details">
-        <p className="P">Bank : {props.bank}</p>
-        <p className="P">Amount : {props.amount}</p>
-        <p className="P">Rate : {props.rate}</p>
+        <p className="P">Bank : {bank}</p>
+        <p className="P">Amount : {amount}</p>
+        <p className="P">Duration : {duration}</p>
+        <p className="P">Rate : {rate}</p>
       </div>
-      {/* add click event to shoz details */}
-      <button onClick={showPopup} className="button">view more</button>
-      <Dettails offer={props} />
+
+      {/* add click event to show details */}
+      <button onClick={showPopup} className="button">
+        view more
+      </button>
+      <Details
+  offer={{ id, bank, rate, amount, duration, pic, isRecommended }}
+/>
     </div>
   );
 };
