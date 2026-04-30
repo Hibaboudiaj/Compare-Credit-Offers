@@ -13,3 +13,5 @@ const List = () => {
 };
 
 export default List;
+
+//kaydoz 3la kola offer f array o kaysayb card lkol offer
